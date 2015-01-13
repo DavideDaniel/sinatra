@@ -51,3 +51,30 @@
 # </body>
 # </html>
 
+# LOOPING IN HTML
+# ===============
+
+# <html>
+#     <body>
+#         <ul>
+#             <% heights = (height..height+14) %>
+#             <% heights.each do |height| %>
+
+#             <img src="http://placekitten.com/g/<%= width %>/<%= height %>">
+#             <% end %>
+#         </ul>
+#     </body>
+# </html>
+
+
+# <html>
+#     <body>
+#         <ul>
+#             <% (1..15).each do |i| %>
+#             <%  height+=50 %>
+
+#             <img src="http://placekitten.com/g/<%= width %>/<%= height %>">
+#             <% end %>
+#         </ul>
+#     </body>
+# </html>
